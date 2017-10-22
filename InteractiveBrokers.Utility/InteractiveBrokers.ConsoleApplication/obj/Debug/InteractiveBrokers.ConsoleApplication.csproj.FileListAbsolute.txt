@@ -1,0 +1,6 @@
+C:\Users\rex\Desktop\InteractiveBrokers.ConsoleApplication\InteractiveBrokers.ConsoleApplication\bin\Debug\InteractiveBrokers.ConsoleApplication.exe.config
+C:\Users\rex\Desktop\InteractiveBrokersUtility\InteractiveBrokers.ConsoleApplication\bin\Debug\InteractiveBrokers.ConsoleApplication.exe.config
+C:\Users\rex\Desktop\InteractiveBrokersUtility\InteractiveBrokers.ConsoleApplication\bin\Debug\InteractiveBrokers.ConsoleApplication.exe
+C:\Users\rex\Desktop\InteractiveBrokersUtility\InteractiveBrokers.ConsoleApplication\bin\Debug\InteractiveBrokers.ConsoleApplication.pdb
+C:\Users\rex\Desktop\InteractiveBrokersUtility\InteractiveBrokers.ConsoleApplication\obj\Debug\InteractiveBrokers.ConsoleApplication.exe
+C:\Users\rex\Desktop\InteractiveBrokersUtility\InteractiveBrokers.ConsoleApplication\obj\Debug\InteractiveBrokers.ConsoleApplication.pdb
