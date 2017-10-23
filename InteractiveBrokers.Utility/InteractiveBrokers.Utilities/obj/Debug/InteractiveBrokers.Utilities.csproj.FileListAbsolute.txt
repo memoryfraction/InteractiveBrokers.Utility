@@ -1,1 +1,7 @@
 C:\Users\rex\Desktop\InteractiveBrokersUtility\InteractiveBrokers.Utilities\obj\Debug\InteractiveBrokers.Utilities.csprojResolveAssemblyReference.cache
+F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.Utilities\bin\Debug\InteractiveBrokers.Utilities.dll
+F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.Utilities\bin\Debug\InteractiveBrokers.Utilities.pdb
+F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.Utilities\bin\Debug\CSharpAPI.dll
+F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.Utilities\obj\Debug\InteractiveBrokers.Utilities.csprojResolveAssemblyReference.cache
+F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.Utilities\obj\Debug\InteractiveBrokers.Utilities.dll
+F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.Utilities\obj\Debug\InteractiveBrokers.Utilities.pdb

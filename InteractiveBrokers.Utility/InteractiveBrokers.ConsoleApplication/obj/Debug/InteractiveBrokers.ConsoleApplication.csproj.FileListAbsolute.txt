@@ -4,3 +4,12 @@ C:\Users\rex\Desktop\InteractiveBrokersUtility\InteractiveBrokers.ConsoleApplica
 C:\Users\rex\Desktop\InteractiveBrokersUtility\InteractiveBrokers.ConsoleApplication\bin\Debug\InteractiveBrokers.ConsoleApplication.pdb
 C:\Users\rex\Desktop\InteractiveBrokersUtility\InteractiveBrokers.ConsoleApplication\obj\Debug\InteractiveBrokers.ConsoleApplication.exe
 C:\Users\rex\Desktop\InteractiveBrokersUtility\InteractiveBrokers.ConsoleApplication\obj\Debug\InteractiveBrokers.ConsoleApplication.pdb
+F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.ConsoleApplication\bin\Debug\InteractiveBrokers.ConsoleApplication.exe.config
+F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.ConsoleApplication\obj\Debug\InteractiveBrokers.ConsoleApplication.exe
+F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.ConsoleApplication\obj\Debug\InteractiveBrokers.ConsoleApplication.pdb
+F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.ConsoleApplication\bin\Debug\InteractiveBrokers.ConsoleApplication.exe
+F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.ConsoleApplication\bin\Debug\InteractiveBrokers.ConsoleApplication.pdb
+F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.ConsoleApplication\bin\Debug\InteractiveBrokers.Utilities.dll
+F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.ConsoleApplication\bin\Debug\CSharpAPI.dll
+F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.ConsoleApplication\bin\Debug\InteractiveBrokers.Utilities.pdb
+F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.ConsoleApplication\obj\Debug\InteractiveBrokers.ConsoleApplication.csprojResolveAssemblyReference.cache

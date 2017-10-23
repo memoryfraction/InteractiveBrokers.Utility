@@ -42,7 +42,7 @@ namespace InteractiveBrokers.Utilities
             if (clientSocket.IsConnected())
                 accountOperations(clientSocket);
 
-            this.testImpl.AccountSummaryFetched += InteractiveBrokersUtility_AccountSummaryFetched; ;
+            this.testImpl.AccountSummaryFetched += InteractiveBrokersUtility_AccountSummaryFetched;
 
             //Once the messages are in the queue, an additional thread need to fetch them
             Thread msgProcessThread = new Thread(() =>
@@ -52,11 +52,12 @@ namespace InteractiveBrokers.Utilities
                     readerSignal.waitForSignal();
                     reader.processMsgs();
                 }
-
             });
+
             msgProcessThread.IsBackground = true;
             msgProcessThread.Start();
 
+            
         }
 
         private void InteractiveBrokersUtility_AccountSummaryFetched(object sender, EventArgs e)
