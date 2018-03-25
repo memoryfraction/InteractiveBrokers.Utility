@@ -16,7 +16,6 @@ namespace InteractiveBrokers.Utilities
         EClientSocket clientSocket;
         public readonly EReaderSignal Signal;
         //! [socket_declare]
-
         private AccountSummary _accountSummary;
 
         public event EventHandler AccountSummaryFetched;
@@ -28,8 +27,8 @@ namespace InteractiveBrokers.Utilities
             clientSocket = new EClientSocket(this, Signal);
             _accountSummary = new AccountSummary();
         }
-        //! [socket_init]
 
+        //! [socket_init]
         public EClientSocket ClientSocket
         {
             get { return clientSocket; }
@@ -172,7 +171,11 @@ namespace InteractiveBrokers.Utilities
 
             ////如果Property所有的属性都已经赋值了，就可以触发事件
             if (_accountSummary.AssignedTimes >= 21)
+            {
+                _accountSummary.AssignedTimes = 0;
                 AccountSummaryFetched((object)_accountSummary, new EventArgs());
+            }
+                
             //bool IsAllPropertyAssigned = this.IsAllPropertyAssigned(_accountSummary);
 
 
@@ -500,5 +503,6 @@ namespace InteractiveBrokers.Utilities
                 Console.WriteLine(tier.DisplayName);
             }
         }
+
     }
 }

@@ -5,3 +5,9 @@ F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.
 F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.Utilities\obj\Debug\InteractiveBrokers.Utilities.csprojResolveAssemblyReference.cache
 F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.Utilities\obj\Debug\InteractiveBrokers.Utilities.dll
 F:\Git\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.Utilities\obj\Debug\InteractiveBrokers.Utilities.pdb
+E:\GitHub\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.Utilities\bin\Debug\InteractiveBrokers.Utilities.dll
+E:\GitHub\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.Utilities\bin\Debug\InteractiveBrokers.Utilities.pdb
+E:\GitHub\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.Utilities\bin\Debug\CSharpAPI.dll
+E:\GitHub\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.Utilities\obj\Debug\InteractiveBrokers.Utilities.csprojResolveAssemblyReference.cache
+E:\GitHub\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.Utilities\obj\Debug\InteractiveBrokers.Utilities.dll
+E:\GitHub\InteractiveBrokers.Utility\InteractiveBrokers.Utility\InteractiveBrokers.Utilities\obj\Debug\InteractiveBrokers.Utilities.pdb
