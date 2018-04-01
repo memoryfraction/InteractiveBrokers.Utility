@@ -11,20 +11,21 @@ namespace InteractiveBrokers.ConsoleApplication
     {
         static void Main(string[] args)
         {
-            InteractiveBrokersUtility IBUtility = new InteractiveBrokersUtility();
-
-            //订阅事件
-            IBUtility.AccountSummaryFetched += IBUtility_AccountSummaryFetched;
-
             for (int i = 0; i < 999; i++)
             {
-                Console.WriteLine("index:" + i);
-                //开始请求数据，结果会在IBUtility_AccountSummaryFetched中得到
-                IBUtility.GetAccountSummary();
+                using (InteractiveBrokersUtility IBUtility = new InteractiveBrokersUtility())
+                {
+                    //订阅事件
+                    IBUtility.AccountSummaryFetched += IBUtility_AccountSummaryFetched;
 
-                //如果正在处理数据，就等待;
-                while (IBUtility.IsBusy)
-                    continue;
+                    Console.WriteLine("index:" + i);
+                    //开始请求数据，结果会在IBUtility_AccountSummaryFetched中得到
+                    IBUtility.GetAccountSummary();
+
+                    //如果正在处理数据，就等待;
+                    while (IBUtility.IsBusy)
+                        continue;
+                }
             }
 
             //阻塞主线程，并等待
