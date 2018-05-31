@@ -8,6 +8,8 @@ namespace InteractiveBrokers.Utilities
 {
     public class AccountSummary
     {
+        // 如果获取不到数值，则返回默认值 -1;
+        private double grossPositionValue = -1;
         public int AssignedTimes { get; set; }
         public double Cushion { get; set; }
         public double DayTradesRemaining { get; set; }
@@ -21,7 +23,14 @@ namespace InteractiveBrokers.Utilities
         public double FullExcessLiquidity { get; set; }
         public double FullInitMarginReq { get; set; }
         public double FullMaintMarginReq { get; set; }
-        public double GrossPositionValue { get; set; }
+        public double GrossPositionValue
+        {
+            get
+            {
+                return grossPositionValue;
+            }
+            set { grossPositionValue = value; }
+        }
         public double InitMarginReq { get; set; }
         public double LookAheadAvailableFunds { get; set; }
         public double LookAheadExcessLiquidity { get; set; }

@@ -504,7 +504,6 @@ namespace InteractiveBrokers.Utilities
             }
         }
 
-
         #region IDisposable Support
         private bool disposedValue = false; // To detect redundant calls
 
@@ -539,6 +538,9 @@ namespace InteractiveBrokers.Utilities
             // GC.SuppressFinalize(this);
         }
         #endregion
+
+
+
 
     }
 }

@@ -32,37 +32,41 @@ namespace InteractiveBrokers.Utilities
             IsBusy = true;
 
             //initiate 多次循环使用时，需要每次都new一个新的EWrapperImpl。否则会因为信号量问题报错;
-            testImpl = new EWrapperImpl();
-            clientSocket = testImpl.ClientSocket;
-            readerSignal = testImpl.Signal;
-
-            //! [connect]
-            if (clientSocket.IsConnected() == false)
-               clientSocket.eConnect("127.0.0.1", 7496, 0);
-            //! [connect]
-            //! [ereader]
-            //Create a reader to consume messages from the TWS. The EReader will consume the incoming messages and put them in a queue
-            var reader = new EReader(clientSocket, readerSignal);
-            reader.Start();
-
-            //get summary
-            if (clientSocket.IsConnected())
-                accountOperations(clientSocket);
-
-            this.testImpl.AccountSummaryFetched += InteractiveBrokersUtility_AccountSummaryFetched;
-
-            //Once the messages are in the queue, an additional thread need to fetch them
-            Thread msgProcessThread = new Thread(() =>
+            using (testImpl = new EWrapperImpl())
             {
-                while (clientSocket.IsConnected())
-                {
-                    readerSignal.waitForSignal();
-                    reader.processMsgs();
-                }
-            });
+                clientSocket = testImpl.ClientSocket;
+                readerSignal = testImpl.Signal;
 
-            msgProcessThread.IsBackground = true;
-            msgProcessThread.Start();
+                //! [connect]
+                if (clientSocket.IsConnected() == false)
+                    clientSocket.eConnect("127.0.0.1", 7496, 0);
+                //! [connect]
+                //! [ereader]
+                //Create a reader to consume messages from the TWS. The EReader will consume the incoming messages and put them in a queue
+                var reader = new EReader(clientSocket, readerSignal);
+                reader.Start();
+
+                //get summary
+                if (clientSocket.IsConnected())
+                    accountOperations(clientSocket);
+
+                this.testImpl.AccountSummaryFetched += InteractiveBrokersUtility_AccountSummaryFetched;
+
+                //Once the messages are in the queue, an additional thread need to fetch them
+                Thread msgProcessThread = new Thread(() =>
+                {
+                    while (clientSocket.IsConnected())
+                    {
+                        readerSignal.waitForSignal();
+                        reader.processMsgs();
+                    }
+                });
+
+                msgProcessThread.IsBackground = true;
+                msgProcessThread.Start();
+            }
+               
+           
         }
 
         private void InteractiveBrokersUtility_AccountSummaryFetched(object sender, EventArgs e)
@@ -107,7 +111,7 @@ namespace InteractiveBrokers.Utilities
         // }
 
         // This code added to correctly implement the disposable pattern.
-        void IDisposable.Dispose()
+        public void Dispose()
         {
             // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
             Dispose(true);
@@ -116,10 +120,6 @@ namespace InteractiveBrokers.Utilities
         }
         #endregion
 
-        //private void InitiateSocketConnection()
-        //{
-
-        //}
 
     }
 }
