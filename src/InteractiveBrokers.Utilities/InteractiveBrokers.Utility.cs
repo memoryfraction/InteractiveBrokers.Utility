@@ -11,7 +11,7 @@ namespace InteractiveBrokers.Utilities
     /// <summary>
     /// 使用说明:初始化，调用GetAccountSummary(), 然后订阅AccountSummaryFetched事件;
     /// </summary>
-    public class InteractiveBrokersUtility:IDisposable
+    public class InteractiveBrokersUtility : IDisposable
     {
         EWrapperImpl testImpl;
         EClientSocket clientSocket;
@@ -24,7 +24,7 @@ namespace InteractiveBrokers.Utilities
 
         public InteractiveBrokersUtility()
         {
-            
+
         }
 
         public void GetAccountSummary()
@@ -65,8 +65,8 @@ namespace InteractiveBrokers.Utilities
                 msgProcessThread.IsBackground = true;
                 msgProcessThread.Start();
             }
-               
-           
+
+
         }
 
         private void InteractiveBrokersUtility_AccountSummaryFetched(object sender, EventArgs e)

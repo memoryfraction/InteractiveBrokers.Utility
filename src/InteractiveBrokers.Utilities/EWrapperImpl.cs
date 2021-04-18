@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace InteractiveBrokers.Utilities
 {
-    public class EWrapperImpl : EWrapper,IDisposable
+    public class EWrapperImpl : EWrapper, IDisposable
     {
         //! [ewrapperimpl]
         private int nextOrderId;
@@ -175,7 +175,7 @@ namespace InteractiveBrokers.Utilities
                 _accountSummary.AssignedTimes = 0;
                 AccountSummaryFetched((object)_accountSummary, new EventArgs());
             }
-                
+
             //bool IsAllPropertyAssigned = this.IsAllPropertyAssigned(_accountSummary);
 
 
