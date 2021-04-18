@@ -18,7 +18,7 @@ Install-Package InteractiveBrokers.Utilities -Version 1.0.0
 ### Code
 
 ```C#
-		//event definition
+		// Event definition
 		private static void IBUtility_AccountSummaryFetched(object sender, EventArgs e)
         {
             AccountSummary summary = (AccountSummary)sender;
@@ -28,13 +28,12 @@ Install-Package InteractiveBrokers.Utilities -Version 1.0.0
 
 		 // Subscribe the event
          IBUtility.AccountSummaryFetched += IBUtility_AccountSummaryFetched;
-
- System.Console.WriteLine("index:" + i);
-          //begin the request, and the result will be got in IBUtility_AccountSummaryFetched
-          IBUtility.GetAccountSummary();             
-          while (IBUtility.IsBusy)
-              continue;
-          IBUtility.Dispose();
+		 System.Console.WriteLine("index:" + i);
+         //begin the request, and the result will be got in IBUtility_AccountSummaryFetched
+         IBUtility.GetAccountSummary();             
+         while (IBUtility.IsBusy)
+             continue;
+         IBUtility.Dispose();
 ```
 
 
@@ -145,6 +144,6 @@ Based on IB API, this paper uses C# to develop an application program to obtain 
 
 ## 4 Reference Materials
 
-[[1\]Interactive Brokers -- Introduction]: https://zhuanlan.zhihu.com/p/26287367
-[[2\]A very simple SDK for IB API]: https://zhuanlan.zhihu.com/p/22864483
+[1 Interactive Brokers -- Introduction]: https://zhuanlan.zhihu.com/p/26287367
+[2 A very simple SDK for IB API]: https://zhuanlan.zhihu.com/p/22864483
 
