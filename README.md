@@ -147,3 +147,11 @@ Based on IB API, this paper uses C# to develop an application program to obtain 
 1 [Interactive Brokers - Introduction](https://zhuanlan.zhihu.com/p/26287367)  
 2 [A very simple SDK for IB API](https://zhuanlan.zhihu.com/p/22864483)
 
+
+## 5 Reference
+
+If this project is helpful to you, please click Star in the upper right corner and forward it to friends who need it.
+You can also buy me a cup of coffee at the link below
+- [Alipay](https://github.com/memoryfraction/TigerBrokerLib/blob/main/images/%E6%94%AF%E4%BB%98%E5%AE%9D%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg?raw=true)
+- [Venmo](https://github.com/memoryfraction/TigerBrokerLib/blob/main/images/Venmo.jpg)
+
