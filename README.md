@@ -42,11 +42,11 @@ Install-Package InteractiveBrokers.Utilities -Version 1.0.0
 
 Interactive Brokers Inc. (" Interactive Brokers ") is one of the largest internet-based brokerages in the United States by revenue and trading volume. The company was listed on NASDAQ in May 2007 under the symbol "IBKR" and currently has a combined capital of approximately $5 billion.S&P has a higher rating than Bank of America, Citibank and others.As of the end of November 2016, Interactive Brokers' clients had total assets of approximately $84.6 billion.Interactive Brokers is the first American online securities firm to register with the China Securities Regulatory Commission, accept the supervision of the Chinese mainland and set up a representative office. It is also the only one at present
 
-![img](https://pic2.zhimg.com/80/v2-840ba12d8b33e4f3073d51b666369939_720w.jpg)
+![img](https://github.com/memoryfraction/InteractiveBrokers.Utility/blob/master/images/IB%20Techs.png?raw=true)
 
 Why C#?
 
-![img](https://pic1.zhimg.com/80/v2-bb59e9d8317c7c7d98098d6c4646881c_720w.jpg)
+![img](https://github.com/memoryfraction/InteractiveBrokers.Utility/blob/master/images/IB%20Languages.png?raw=true)
 
 
 
@@ -66,11 +66,11 @@ The API call of IB is essentially a call to the running TWS of IB by the develop
 
 So, we first need to download the IB API, address: http://interactivebrokers.github.io/ readers, please according to select the appropriate version in different operating systems.It is highly recommended to choose the stable version.
 
-![img](https://pic1.zhimg.com/80/v2-cd18ff4e0f168320d01b31958aefe3b4_720w.jpg)
+![img](https://github.com/memoryfraction/InteractiveBrokers.Utility/blob/master/images/IB%20API.png?raw=true)
 
 After downloading, you can get "TWS API Install 972.18.msi".The source code for the two sample projects is available in the installation directory after installation.One is WinForm and the other is ConsoleApplication.This article uses ConsoleApplication as an example.
 
-![img](https://pic2.zhimg.com/80/v2-e130881e0c16680f58b9f376edda3615_720w.jpg)
+![img](https://github.com/memoryfraction/InteractiveBrokers.Utility/blob/master/images/IB%20Folders.jpg?raw=true)
 
 ### **2.2 Download and Install TWS**
 
@@ -78,15 +78,15 @@ TWS download address：[https://www.interactivebrokers.com/en/index.php?f=16042]
 
 input credential to login TWS
 
-![img](https://pic1.zhimg.com/80/v2-9d7095152a56f911740cf6e5f85d4c40_720w.jpg)
+![img](https://github.com/memoryfraction/InteractiveBrokers.Utility/blob/master/images/TWS%20Login.png?raw=true)
 
 Got below printscreen after the login.
 
-![img](https://pic4.zhimg.com/80/v2-02e20a936532828d44c87c83ad2fccc7_720w.jpg)
+![img](https://github.com/memoryfraction/InteractiveBrokers.Utility/blob/master/images/TWS%20UI.jpg?raw=true)
 
 Note that using the 2.1 consoleApplication call directly at this point will report an error.Error general content: "server initiatively rejects request".Solution: Use IntraX, Tools, and Configuration, check and apply as shown below.
 
-![preview](https://pic4.zhimg.com/v2-dceb23aab0654794f2a43afbe1ca8fc7_r.jpg)
+![preview](https://github.com/memoryfraction/InteractiveBrokers.Utility/blob/master/images/TWS%20Setting.jpg?raw=true)
 
 After clicking Apply, you can connect normally using the IB API Console Application.
 
@@ -94,7 +94,7 @@ After clicking Apply, you can connect normally using the IB API Console Applicat
 
 When you open the testbed. SLN project, you see the figure below, where it is not recommended to try to modify the contents of cSharpapi [2].
 
-![img](https://pic4.zhimg.com/80/v2-16f36cded7a13cbbf2299df9adacc397_720w.jpg)
+![img](https://github.com/memoryfraction/InteractiveBrokers.Utility/blob/master/images/IB%20Folders.jpg?raw=true)
 
 Background:
 
@@ -122,13 +122,13 @@ This article presents a possible, but not perfect, solution:
 
 1 Define AccountSummary as shown in the figure below
 
-![img](https://pic3.zhimg.com/80/v2-ecd442641c48d17e29db2860d734e376_720w.jpg)
+![img](https://github.com/memoryfraction/InteractiveBrokers.Utility/blob/master/images/Result%20Class%20Design.png?raw=true)
 
 2 EWRAPPerImpl class. In the AccountSummary method, an AccountSummary is considered to have been assigned when the Account is counted to 21 properties.It works, but it's not perfect.If IB updates the account information, the number of attributes may exceed 21
 
 3 Since the communication between multiple threads is involved, there are three solutions: events, mutex and semaphore.The author uses the event mode to implement.That is, defined in eWrapPerImpl
 
-public event EventHandler AccountSummaryFetched; In the execution of the following method, if it is called more than 21 times, an AccountSummary____ event is triggered.
+public event EventHandler AccountSummaryFetched; In the execution of the following method, if it is called more than 21 times, an AccountSummary event is triggered.
 
 public virtual void accountSummary(int reqId, string account, string tag, string value, string currency)
 
