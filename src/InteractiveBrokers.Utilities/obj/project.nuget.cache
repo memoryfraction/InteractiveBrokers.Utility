@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dEg4x2VBTbls17728Wh5gbf8QQZQDP+RqoZI6RCxClQRwg5AU3weCPwrnyLd5hHVYWYBKnRIcaYsqPG/gw+h2A==",
+  "dgSpecHash": "HUuMwMfayy45ajvc5p9+6z2rzAF8z65cVzjWHJnHACD3mrem9RM+JU7pTBOVpNC8xtdcv7pvLlUzQcbqfv52zQ==",
   "success": true,
   "projectFilePath": "E:\\GitHub\\InteractiveBrokers.Utility\\src\\InteractiveBrokers.Utilities\\InteractiveBrokers.Utilities.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\rongf\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

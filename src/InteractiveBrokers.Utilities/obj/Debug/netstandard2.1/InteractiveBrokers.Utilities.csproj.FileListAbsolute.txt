@@ -1,0 +1,10 @@
+E:\GitHub\InteractiveBrokers.Utility\src\InteractiveBrokers.Utilities\obj\Debug\netstandard2.1\InteractiveBrokers.Utilities.AssemblyInfoInputs.cache
+E:\GitHub\InteractiveBrokers.Utility\src\InteractiveBrokers.Utilities\obj\Debug\netstandard2.1\InteractiveBrokers.Utilities.AssemblyInfo.cs
+E:\GitHub\InteractiveBrokers.Utility\src\InteractiveBrokers.Utilities\obj\Debug\netstandard2.1\InteractiveBrokers.Utilities.csproj.CoreCompileInputs.cache
+E:\GitHub\InteractiveBrokers.Utility\src\InteractiveBrokers.Utilities\bin\Debug\netstandard2.1\InteractiveBrokers.Utilities.deps.json
+E:\GitHub\InteractiveBrokers.Utility\src\InteractiveBrokers.Utilities\bin\Debug\netstandard2.1\InteractiveBrokers.Utilities.dll
+E:\GitHub\InteractiveBrokers.Utility\src\InteractiveBrokers.Utilities\bin\Debug\netstandard2.1\InteractiveBrokers.Utilities.pdb
+E:\GitHub\InteractiveBrokers.Utility\src\InteractiveBrokers.Utilities\bin\Debug\netstandard2.1\CSharpAPI.dll
+E:\GitHub\InteractiveBrokers.Utility\src\InteractiveBrokers.Utilities\obj\Debug\netstandard2.1\InteractiveBrokers.Utilities.csproj.CopyComplete
+E:\GitHub\InteractiveBrokers.Utility\src\InteractiveBrokers.Utilities\obj\Debug\netstandard2.1\InteractiveBrokers.Utilities.dll
+E:\GitHub\InteractiveBrokers.Utility\src\InteractiveBrokers.Utilities\obj\Debug\netstandard2.1\InteractiveBrokers.Utilities.pdb
