@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InteractiveBrokers.ConsoleApplication", "InteractiveBrokers.ConsoleApplication\InteractiveBrokers.ConsoleApplication.csproj", "{DC7499B1-1D21-44DC-86CF-6D406314E4F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InteractiveBrokers.Console", "InteractiveBrokers.ConsoleApplication\InteractiveBrokers.Console.csproj", "{DC7499B1-1D21-44DC-86CF-6D406314E4F3}"
 	ProjectSection(ProjectDependencies) = postProject
 		{A03CC3DC-8419-4169-BD44-945212F8B1E7} = {A03CC3DC-8419-4169-BD44-945212F8B1E7}
 	EndProjectSection
@@ -27,5 +27,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {387C37B7-15D3-4863-B3A5-CF8456CD2C96}
 	EndGlobalSection
 EndGlobal

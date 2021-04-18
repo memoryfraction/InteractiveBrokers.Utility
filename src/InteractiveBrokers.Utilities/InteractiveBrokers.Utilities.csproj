@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>InteractiveBrokers.Utilities</RootNamespace>
     <AssemblyName>InteractiveBrokers.Utilities</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -46,7 +46,7 @@
   <ItemGroup>
     <Compile Include="AccountSummary.cs" />
     <Compile Include="EWrapperImpl.cs" />
-    <Compile Include="InteractiveBrokersUtility.cs" />
+    <Compile Include="InteractiveBrokers.Utility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

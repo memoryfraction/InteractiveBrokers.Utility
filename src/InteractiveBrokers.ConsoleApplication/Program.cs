@@ -13,24 +13,24 @@ namespace InteractiveBrokers.ConsoleApplication
     class Program
     {
         static int i;
-        static Stopwatch sw=new Stopwatch();
+        static Stopwatch sw = new Stopwatch();
         static void Main(string[] args)
         {
-            InteractiveBrokersUtility IBUtility = new InteractiveBrokersUtility(); ;
+            InteractiveBrokersUtility IBUtility = new InteractiveBrokersUtility();
             sw.Start();
-            for(i = 0; i < 100; i++)
+            for (i = 0; i < 100; i++)
             {
                 //订阅事件
                 IBUtility.AccountSummaryFetched += IBUtility_AccountSummaryFetched;
 
-                 Console.WriteLine("index:" + i);
+                Console.WriteLine("index:" + i);
                 //开始请求数据，结果会在IBUtility_AccountSummaryFetched中得到
                 IBUtility.GetAccountSummary();
 
                 //如果正在处理数据，就等待;
                 while (IBUtility.IsBusy)
-                     continue;
-                 IBUtility.Dispose();
+                    continue;
+                IBUtility.Dispose();
             };
             sw.Stop();
 
@@ -42,10 +42,8 @@ namespace InteractiveBrokers.ConsoleApplication
         private static void IBUtility_AccountSummaryFetched(object sender, EventArgs e)
         {
             AccountSummary summary = (AccountSummary)sender;
-            double avgSecConsumed=sw.Elapsed.TotalSeconds / (double)i;
-            Console.WriteLine("IBBrokers account summary got.index:"+i+ "\r\n average second per time:" + avgSecConsumed);
+            double avgSecConsumed = sw.Elapsed.TotalSeconds / (double)i;
+            Console.WriteLine("IBBrokers account summary got.index:" + i + "\r\n average second per time:" + avgSecConsumed);
         }
-
-
     }
 }
