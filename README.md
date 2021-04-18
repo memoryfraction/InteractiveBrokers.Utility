@@ -145,6 +145,6 @@ Based on IB API, this paper uses C# to develop an application program to obtain 
 
 ## 4 Reference Materials
 
-[[1\]Interactive Brokers -- Introduction]: https://zhuanlan.zhihu.com/p/26287367
-[[2\]A very simple SDK for IB API]: https://zhuanlan.zhihu.com/p/22864483
+[]: https://zhuanlan.zhihu.com/p/26287367	"[1]Interactive Brokers -- Introduction"
+[]: https://zhuanlan.zhihu.com/p/22864483	"[2]A very simple SDK for IB API"
 
