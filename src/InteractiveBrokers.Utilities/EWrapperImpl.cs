@@ -169,18 +169,12 @@ namespace InteractiveBrokers.Utilities
 
             Console.WriteLine("Acct Summary. ReqId: " + reqId + ", Acct: " + account + ", Tag: " + tag + ", Value: " + value + ", Currency: " + currency);
 
-            ////如果Property所有的属性都已经赋值了，就可以触发事件
+            // 如果Property所有的属性都已经赋值了，就可以触发事件
             if (_accountSummary.AssignedTimes >= 21)
             {
                 _accountSummary.AssignedTimes = 0;
                 AccountSummaryFetched((object)_accountSummary, new EventArgs());
             }
-
-            //bool IsAllPropertyAssigned = this.IsAllPropertyAssigned(_accountSummary);
-
-
-            //if(!IsAllPropertyAssigned)
-            //    AccountSummaryFetched((object)_accountSummary, new EventArgs()); 
 
         }
 

@@ -77,10 +77,12 @@ namespace InteractiveBrokers.Utilities
             this.AccountSummaryFetched(sender, e);
         }
 
+
         private static void accountOperations(EClientSocket client)
         {
             client.reqAccountSummary(9001, "All", AccountSummaryTags.GetAllTags());
         }
+
 
         #region IDisposable Support
         private bool disposedValue = false; // To detect redundant calls
